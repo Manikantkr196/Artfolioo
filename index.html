@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Artist Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand" onclick="showPage('home')">
+                <i class="fas fa-palette"></i>
+                <span>ArtistPortfolio</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-page="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link" data-page="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#portfolio" class="nav-link" data-page="portfolio">
+                    <i class="fas fa-images"></i>
+                    <span>Portfolio</span>
+                </a>
+                <a href="#order" class="nav-link" data-page="order">
+                    <i class="fas fa-star"></i>
+                    <span>Order</span>
+                </a>
+                <a href="#contact" class="nav-link" data-page="contact">
+                    <i class="fas fa-phone"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1>Beautiful <span class="highlight">Pencil Portraits</span></h1>
+                            <p>Transform your precious memories into stunning hand-drawn pencil sketches. Each portrait is crafted with meticulous attention to detail and artistic passion.</p>
+                            <div class="hero-buttons">
+                                <button class="btn btn-primary" onclick="showPage('portfolio')">
+                                    View Portfolio
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                                <button class="btn btn-secondary" onclick="showPage('order')">
+                                    Order Portrait
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <div class="image-card">
+                                <img src="sketchy.jpg" alt="Sample Portrait">
+                                <div class="image-badge">Sample Work</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-value">30+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-value">4.2</div>
+                            <div class="stat-label">Average Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="stat-value">3 Years</div>
+                            <div class="stat-label">Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Process Section -->
+            <section class="process">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Simple Process</h2>
+                        <p>From photo to portrait in just a few easy steps</p>
+                    </div>
+                    <div class="process-grid">
+                        <div class="process-step">
+                            <div class="step-number">01</div>
+                            <h3>Upload Photo</h3>
+                            <p>Send us your favorite photo</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">02</div>
+                            <h3>Review & Approve</h3>
+                            <p>We discuss details and pricing</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">03</div>
+                            <h3>Create Portrait</h3>
+                            <p>Our artist creates your masterpiece</p>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">04</div>
+                            <h3>Deliver</h3>
+                            <p>Receive your beautiful portrait</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta">
+                <div class="container">
+                    <h2>Ready to Create Your Portrait?</h2>
+                    <p>Join hundreds of satisfied customers who have immortalized their memories</p>
+                    <button class="btn btn-white" onclick="showPage('order')">
+                        Start Your Order
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <section class="about-hero">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h1>About the Artist</h1>
+                            <p class="lead">Passionate artist dedicated to capturing the essence of human emotion through pencil and paper.</p>
+                            <div class="about-description">
+                                <p>Myself Manikant kumar, With over 3 years of experience in portrait art, I specialize in creating realistic pencil sketches that tell stories. Each portrait is carefully crafted to capture not just the physical likeness, but the soul and personality of the subject.</p>
+                                <p>My sketching journey began in 10th grade, where I discovered my passion for art and gradually honed my skills through classical drawing techniques and constant practice. Since then, I've had the privilege of creating portraits for families, couples, and individuals who want to preserve their most precious memories.</p>
+                            </div>
+                        </div>
+                        <div class="about-image">
+                            <div class="image-card">
+                         <img src="myimg.jpg" alt="Artist at work" class="responsive-img" style="width: 70%; max-width: 70%; height: auto; display: block; margin: 0 auto; border-radius: 10px; object-fit: cover;">
+
+                                <div class="image-badge">Creating Magic</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Artistic Skills</h2>
+                        <p>Mastery developed through years of practice and dedication</p>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Pencil Sketching</h3>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Portrait Drawing</h3>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Realistic Shading</h3>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <h3>Detail Work</h3>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Philosophy Section -->
+            <section class="philosophy">
+                <div class="container">
+                    <h2>My Philosophy</h2>
+                    <blockquote>
+                        "Every portrait tells a story. My goal is to capture not just how someone looks, but who they are - their essence, their character, their unique spirit that makes them irreplaceable."
+                    </blockquote>
+                    <p>- Artist & Portrait Specialist</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Portfolio Page -->
+        <div id="portfolio" class="page">
+            <section class="portfolio-header">
+                <div class="container">
+                    <h1>Portfolio</h1>
+                    <p>Explore our collection of beautiful pencil portraits, each crafted with passion and attention to detail.</p>
+                </div>
+            </section>
+
+            <!-- Filter -->
+            <section class="portfolio-filter">
+                <div class="container">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Portraits</button>
+                        <button class="filter-btn" data-filter="boy">Boy</button>
+                        <button class="filter-btn" data-filter="couple">Couples</button>
+                        <button class="filter-btn" data-filter="child">Children</button>
+                        <button class="filter-btn" data-filter="anime">Anime</button>
+                        <button class="filter-btn" data-filter="girl">Girl</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery -->
+            <section class="portfolio-gallery">
+                <div class="container">
+                    <div class="gallery-grid" id="gallery-grid">
+                        <!-- Gallery items will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Order Page -->
+        <div id="order" class="page">
+            <section class="order-header">
+                <div class="container">
+                    <h1>Order Your Portrait</h1>
+                    <p>Follow these simple steps to commission your custom pencil portrait</p>
+                </div>
+            </section>
+
+            <!-- Progress Steps -->
+            <section class="order-progress">
+                <div class="container">
+                    <div class="progress-steps">
+                        <div class="step active" data-step="1">
+                            <div class="step-icon">
+                                <i class="fas fa-upload"></i>
+                            </div>
+                            <div class="step-info">
+                                <p class="step-number">Step 1</p>
+                                <p class="step-title">Photo Upload</p>
+                            </div>
+                        </div>
+                        <div class="step" data-step="2">
+                            <div class="step-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="step-info">
+                                <p class="step-number">Step 2</p>
+                                <p class="step-title">Details</p>
+                            </div>
+                        </div>
+                        <div class="step" data-step="3">
+                            <div class="step-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="step-info">
+                                <p class="step-number">Step 3</p>
+                                <p class="step-title">Review</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Order Form -->
+            <section class="order-form">
+                <div class="container">
+                    <form id="order-form" class="form-card">
+                        <!-- Step 1: Photo Upload -->
+                        <div class="form-step active" data-step="1">
+                            <h2>Upload Your Photo</h2>
+                            <div class="upload-area" id="upload-area">
+                                <i class="fas fa-upload"></i>
+                                <h3>Choose a high-quality photo</h3>
+                                <p>JPG, PNG, or JPEG. Maximum file size: 10MB</p>
+                                <input type="file" id="photo-input" accept="image/*" hidden>
+                                <button type="button" class="btn btn-primary" onclick="document.getElementById('photo-input').click()">
+                                    <i class="fas fa-upload"></i>
+                                    Select Photo
+                                </button>
+                            </div>
+                            <div class="upload-tips">
+                                <h3>Photo Tips:</h3>
+                                <ul>
+                                    <li>Use high resolution images (at least 1000x1000 pixels)</li>
+                                    <li>Ensure good lighting and clear details</li>
+                                    <li>Avoid blurry or low-quality photos</li>
+                                    <li>Multiple reference photos are welcome</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Details -->
+                        <div class="form-step" data-step="2">
+                            <h2>Portrait Details</h2>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Full Name *</label>
+                                    <input type="text" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email Address *</label>
+                                    <input type="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="tel" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label>Number of Subjects</label>
+                                    <input type="number" name="subjects" min="1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Portrait Type *</label>
+                                <select name="portraitType" required>
+                                    <option value="">Select portrait type</option>
+                                    <option value="boy">Boy Portrait - ₹500 (5-7 days)</option>
+                                    <option value="couple">Couple Portrait - ₹750 (7 days)</option>
+                                    <option value="child">Children Portrait - ₹500 (4-7 days)</option>
+                                    <option value="anime">Anime Portrait - ₹350 (3-5 days)</option>
+                                    <option value="girl">Girl Portrait - ₹500 (5-7 days)</option>
+                                    <option value="individual">Individual Portrait - ₹500 (5-7 days)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Size *</label>
+                                <select name="size" required>
+                                    <option value="">Select size</option>
+                                    <option value="8x10">8x10 inches</option>
+                                    <option value="9x12">9x12 inches (+20%)</option>
+                                    <option value="11x14">11x14 inches (+50%)</option>
+                                    <option value="12x16">12x16 inches (+80%)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Preferred Deadline</label>
+                                <input type="date" name="deadline">
+                            </div>
+                            <div class="form-group">
+                                <label>Special Requests</label>
+                                <textarea name="specialRequests" rows="4" placeholder="Any specific details, background preferences, or special instructions..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Review -->
+                        <div class="form-step" data-step="3">
+                            <h2>Review Your Order</h2>
+                            <div class="order-summary" id="order-summary">
+                                <!-- Order summary will be populated by JavaScript -->
+                            </div>
+                            <div class="order-notes">
+                                <h4>Next Steps:</h4>
+                                <ul>
+                                    <li>We'll review your order and contact you within 24 hours</li>
+                                    <li>50% deposit required to start the portrait</li>
+                                    <li>Regular updates provided throughout the process</li>
+                                    <li>Final payment due upon completion</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn-secondary" id="prev-btn" onclick="prevStep()" disabled>
+                                <i class="fas fa-chevron-left"></i>
+                                Previous
+                            </button>
+                            <div class="step-indicator">
+                                <i class="fas fa-clock"></i>
+                                <span id="step-text">Step 1 of 3</span>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="next-btn" onclick="nextStep()">
+                                Next
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <section class="contact-header">
+                <div class="container">
+                    <h1>Get in Touch</h1>
+                    <p>Have questions about commissioning a portrait? We'd love to hear from you and help bring your vision to life.</p>
+                </div>
+            </section>
+
+            <!-- Contact Info -->
+            <section class="contact-info">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p class="contact-value">manikantkr7343@gmail.com</p>
+                            <p class="contact-desc">Send us an email anytime</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Phone</h3>
+                            <p class="contact-value">+91-6206519826</p>
+                            <p class="contact-desc">Call us during business hours</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Location</h3>
+                            <p class="contact-value">Pusa, Bihar</p>
+                            <p class="contact-desc">Based in the heart of Pusa</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Hours</h3>
+                            <p class="contact-value">Mon-Fri: 9AM-6PM</p>
+                            <p class="contact-desc">Weekend consultations available</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form & FAQ -->
+            <section class="contact-content">
+                <div class="container">
+                    <div class="contact-layout">
+                        <!-- Contact Form -->
+                        <div class="contact-form">
+                            <div class="form-header">
+                                <i class="fas fa-comments"></i>
+                                <h2>Send us a Message</h2>
+                                <p>We'll get back to you within 24 hours</p>
+                            </div>
+                            <form id="contact-form">
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label>Name *</label>
+                                        <input type="text" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email *</label>
+                                        <input type="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Subject *</label>
+                                    <select name="subject" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="portrait-inquiry">Portrait Inquiry</option>
+                                        <option value="pricing">Pricing Information</option>
+                                        <option value="timeline">Timeline Questions</option>
+                                        <option value="custom-request">Custom Request</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Message *</label>
+                                    <textarea name="message" rows="6" placeholder="Tell us about your portrait project..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-full">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- FAQ -->
+                        <div class="faq-section">
+                            <h2>Frequently Asked Questions</h2>
+                            <p>Find answers to common questions about our portrait services.</p>
+                            <div class="faq-list">
+                                <div class="faq-item">
+                                    <button class="faq-question" onclick="toggleFaq(this)">
+                                        <h3>How long does a portrait take?</h3>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Typical turnaround is 3-7 days depending on complexity and size. Rush orders available.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <button class="faq-question" onclick="toggleFaq(this)">
+                                        <h3>What photo quality do you need?</h3>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>High-resolution photos work best. We can work with most photos but clear, well-lit images produce the best results.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <button class="faq-question" onclick="toggleFaq(this)">
+                                        <h3>Do you offer revisions?</h3>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>Yes! We include one round of minor revisions to ensure you're completely satisfied.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <button class="faq-question" onclick="toggleFaq(this)">
+                                        <h3>What payment methods do you accept?</h3>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>We accept all major online payment methods, UPI, and bank transfers. 50% deposit required to start.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cta-box">
+                                <h3>Ready to Start?</h3>
+                                <p>Have all your questions answered? Let's create your perfect portrait!</p>
+                                <button class="btn btn-white" onclick="showPage('order')">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal for Portfolio -->
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modal-body">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-palette"></i>
+                        <span>ArtistPortfolio</span>
+                    </div>
+                    <p>Creating beautiful pencil sketch portraits with passion and precision.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><button onclick="showPage('home')">Home</button></li>
+                        <li><button onclick="showPage('about')">About</button></li>
+                        <li><button onclick="showPage('portfolio')">Portfolio</button></li>
+                        <li><button onclick="showPage('order')">Order</button></li>
+                        <li><button onclick="showPage('contact')">Contact</button></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: manikantkr7343@gmail.com</p>
+                    <p>Phone: +91-6206519826</p>
+                    <p>Based in Pusa, Bihar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ArtistPortfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
